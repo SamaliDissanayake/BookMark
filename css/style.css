@@ -1,0 +1,55 @@
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+
+}
+.btn-outline-success{
+    width: 200px;
+    margin-right: 20px;
+}
+.container {
+    position: relative;
+    width: 100%;
+    
+
+}
+.container .btn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+float: left;
+}
+
+.container .btn:hover{
+    background-color: gray;
+}
+.container-fluid{
+    margin-left: 300px;
+}
+.jumbotron{
+    
+        position: relative;
+        padding:15px;
+        background:rgb(181, 194, 181);
+        text-align:center;
+        margin-bottom:0;
+        height: 400px;;
+        width:800px;
+        margin-left: 130px;
+        margin-top: 40px;
+    
+}
+
+.btn-group .btn{
+    float: left;
+    margin-left:10px;
+}
+.jambo1{
+    height: 80px;
+    background-color: grey;
+}
+.btn-outline-success{
+    margin-right: 50px;
+}
