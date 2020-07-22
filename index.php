@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width">
     <link href="image/icon.png" rel="icon">
+    <script src="js/jquery.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -43,7 +44,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">What We Do</a>
+        <a class="nav-link" href="#whatwedo">What We Do</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Development Team</a>
@@ -56,7 +57,7 @@
     </ul>
     
       
-    <a href="login.php"> <button class="btn btn-outline-success my-2 my-sm-0">Login</button></a>
+    <button class="btn btn-outline-success my-2 my-sm-0" id="myBtn">Login</button>
     
   </div>
 </nav>
@@ -104,6 +105,7 @@ function carousel() {
     </div>  
     
     <hr id="whatwedo">
+    <!--What we do-->
 
     <section class="whatwedo">  
      
@@ -128,6 +130,81 @@ function carousel() {
       </div>
    </section>
 
+   <!--About Me--> 
+   
+ <div class="abtcontent">   
+       
+       <hr id="aboutUs" class="aboutUsHR"> 
+         
+       <section class="aboutus">  
+           
+             <div class="container-fluid text-center aboutTopic">
+              <div class="row">
+                <div class="col-lg-12">
+                    About Me
+                  </div>
+              </div>
+            </div> 
+         
+            <div class="container-fluid aboutcontent">
+              <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 lead text-center text-justify"> 
+                    I, Yasun Herath, am a Web Designer living in Kandy, Sri Lanka. Currently I'm enrolled at the Infortec International University College. My interest for internet techgnologies began early in my college days where I used to create Web pages. I love designing and developing web sites and feel free to collabarate with me anytime.
+                  </div>
+              </div>
+            </div>
+            
+             <hr id="contactUs" class="contactUsHR">
+        </section>   
+       </div>
+       
+   
+   <div class="container">
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+   
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header" style="padding:30px 50px ">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4> Login</h4>
+       </div>
+       <div class="modal-body" style="padding:40px 50px;">
+         <form role="form" id="myForm" method="POST">
+           <div class="form-group">
+             <label for="usrname"> Username</label>
+             <input type="text" class="form-control" id="usrname" name="usrname" placeholder="Enter email">
+           </div>
+           <div class="form-group">
+             <label for="psw"> Password</label>
+             <input type="text" class="form-control" id="psw" name="psw" placeholder="Enter password">
+           </div>
+           <div class="checkbox">
+             <label><input type="checkbox" value="" checked>Remember me</label>
+           </div><br><br>
+             <button type="submit" class="btn btn-success btn-lg" name="login"> Login</button>
+         </form>
+       </div>
+       <div class="modal-footer">
+         
+         
+         <p>Forgot <a href="#">Password?</a></p>
+       </div>
+     </div>
+     
+   </div>
+ </div> 
+</div>
+     
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+</script>
    
     
 </body>
